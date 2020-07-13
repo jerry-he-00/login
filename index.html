@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackerStart login</title>
+    <style>
+        div{
+            background-color: rgb(90, 71, 71);
+            margin: 50px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        label,input,form
+        {
+            display: block;
+            width: 350px;
+            padding: 10px 5px;
+            margin: 10px 150px;
+            text-align: left;
+        }
+        .ver{
+            display: block;
+            float: left;
+            width: 250px;
+            padding: 10px 5px;
+            margin: 10px 3px 10px 150px;
+            text-align: left;
+        }
+        .submit{
+            /* float: left; */
+            display: block;
+            width: 96px;
+            padding:9px 5px;
+            margin-top: -10px;
+            text-align: center;
+            color: white;
+            border-color:rgb(245, 102, 102) ;
+            background-color: rgb(245, 102, 102);
+        }
+        .register{
+            width: 370px;
+            margin: 50px 3px 50px 300px;
+            text-align: center;
+            color: white;
+            border-radius: 19px;
+            border-color:rgb(245, 102, 102) ;
+            background-color: rgb(245, 102, 102);
+        }
+        .re{
+            width: 220px;
+           margin-left: 640px;
+           color:rgb(245, 102, 102) ;
+           background-color: rgb(90, 71, 71);
+           border-width: 0px;
+           font-size: 1.5em;
+        }
+        .re[type=text]{
+           color:white;
+        }
+        .yan{
+            float: left;
+            width: 140px;
+           margin-left: 320px;
+           margin-right: 50px;
+           margin-top: 60px;
+           color:white ;
+           background-color: rgb(90, 71, 71);
+           border-width: 0px;
+           font-size: 1.5em;
+        }
+        .yan[type=bottom]{
+            width: 100px;
+            float: left;
+            margin-right: 0px;
+           color: rgb(245, 102, 102);
+           margin-left: 50px;
+        }
+        .yan1{
+            width: 370px;
+            margin-left: 140px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <p style="text-align: center;">
+        <img src="https://gitee.com/jerry_he001/PicGoImage/raw/master/img/HackerStart.jpg">
+    </p>
+    <p style="font-size:2em;text-align: center;color: white;">
+        注册
+    </p>
+    <label>
+        <input type="text" name="phone" required placeholder="手机号" maxlength="11" onkeyup="value=value.replace(/[^\d]/g,'')"/>
+    </label>     
+    <form>
+        <input class="ver" type="text" name="verification" required placeholder="验证码" maxlength="6"/>
+    </form>  
+    <input class="submit" type="submit" value="发送验证码"/>
+    <input class="register" type="submit" value="快速注册"/>
+    <input class="re" type="submit" value="使用已有账号登录"/>
+    </div>
+    <div>
+        <p style="text-align: center;">
+            <img src="https://gitee.com/jerry_he001/PicGoImage/raw/master/img/HackerStart.jpg">
+        </p>
+        <input class="yan" type="submit" value="验证码登录"/>
+        <input class="yan" type="bottom" value="密码登录"/>
+        <label>
+        <input class="yan1" type="email" name="email" required placeholder="邮箱" minlength="6"/>
+        </label>
+        <label>
+            <input class="yan1" type="password" name="password" required placeholder="密码" minlength="6"/>
+            </label>
+            <input class="re" type="text" value="忘记密码"/>
+            <input class="register" type="submit" value="登录"/>
+            <input class="re" type="submit" value="注册用户"/>
+    </div>
+</body>
+</html>
